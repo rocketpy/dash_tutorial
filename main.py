@@ -1,11 +1,12 @@
 #  pip install dash  or  pip install dash==1.17.0
 
 #  Docs:  http://dash.plotly.com/
+#  Dash Gallery:  https://dash-gallery.plotly.host/Portal/
 
-# for debug need use: app.run_server(debug=True) 
+# for debug mode need use: app.run_server(debug=True) 
 
 #  example of app 
-# Run this app with `python app.py` and
+# Run this app with `python app.py` or 'python file_name.py' and
 # visit http://127.0.0.1:8050/ in your web browser.
 
 import dash
