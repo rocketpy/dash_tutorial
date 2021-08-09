@@ -28,3 +28,21 @@ new = pd.DataFrame({col_label: v.index,
                    })
 
 # create the map with the ‘country_iso’ and ‘count’ columns
+hexcode = 0
+borders = [hexcode for x in range(len(new))],
+           map = dcc.Graph(id='8',
+                figure={'data': [{'locations':new['country_code'],
+                        'z':new['count'],
+                        'colorscale': 'Earth',
+                        'reversescale':True,
+                        'hover-name':new['final_country'],
+                        'type': 'choropleth'}],
+                        'layout':{'title':dict(text='Restaurant Frequency by Location',
+                                               font=dict(size=20,
+                                               color='white')),
+                                  "paper_bgcolor": "#111111",
+                                  "plot_bgcolor": "#111111",
+                                  "height": 800,
+                                  "geo":dict(bgcolor='rgba(0,0,0,0)')}
+                        })
+
