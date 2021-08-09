@@ -18,4 +18,13 @@ server = app.server
 
 df = pd.read_csv('file_name.csv', encoding="ISO-8859-1")
 
+# country iso with counts
+col_label = "country_code"
+col_values = "count"
 
+v = df[col_label].value_counts()
+new = pd.DataFrame({col_label: v.index,
+                    col_values: v.values
+                   })
+
+# create the map with the ‘country_iso’ and ‘count’ columns
